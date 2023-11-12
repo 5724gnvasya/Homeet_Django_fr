@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="ru">
 
@@ -5,18 +7,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{title}}</title>
-    <link rel="icon" href="static\src\img\icon_homeet.PNG" type="image/x-icon">
-    <link type="text/css" rel="stylesheet" href="static\src\css\style.css">
+    <link rel="icon" href="{% static 'profil/img/icon_homeet.PNG' %}" type="image/x-icon">
+    <link type="text/css" rel="stylesheet" href="{% static 'profil\css\style.css' %}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="static\src\js\script_1.js"></script>
+    <script src="{% static 'js\script_1.js' %}"></script>
 </head>
 
 <body>
-    <script src="static\src\js\script_1.js"></script>
+    <script src=" {% static 'profil\js\script_1.js' %} "></script>
     <header class="otst_0">
-        <img src="static\src\img\Слой 2.svg" alt="Logo">
+        <img src="{% static 'profil\img\Слой 2.svg' %}" alt="Logo">
         <button id="but1" class="v_is_akk" style="float:right">Выйти из аккаунта</button>
 
     </header>
@@ -52,19 +54,6 @@
                         <input class="form__input" placeholder=" ">
                         <label id="name" name="name" class="form__label" placeholder="Имя и фамилия">Курс</label>
                     </div>
-
-<!--                    <div class="container1"><span class="user1">User 1</span>-->
-
-<!--                        <div class="selectOptions1">-->
-<!--                            <div class="myOptions1">-->
-<!--                                <div class="option volvo1">Volvo</div>-->
-<!--                                <div class="option saab1">Saab</div>-->
-<!--                                <div class="option mercedes1">Mercedes</div>-->
-<!--                                <div class="option audi1">Audi</div>-->
-<!--                            </div>-->
-<!--                            <div class="select user1">User 1</div>-->
-<!--                        </div>-->
-<!--                    </div>-->
 
 
                     <select class="select" class="menu" class="dropdown">
@@ -118,7 +107,7 @@
                 <p class="tak_b_v">Так будет выглядеть твоя будущая страница</p>
                 <div class="page_block_3">
                     <div class="page_block">
-                        <img src="static\src\img\фото мини.svg" alt="someone's_photo" width=" 140" style="margin-bottom: 12px">
+                        <img src="{% static 'profil\img\фото мини.svg' %} " alt="someone's_photo" width=" 140" style="margin-bottom: 12px">
                         <label class="file-input_1" style="margin: 0 0 0 15px">Показать контакты</label>
                     </div>
 
@@ -127,9 +116,9 @@
                         </h1>
                         <div class="fill_in">
                             <h1 id="users_added_gender"> </h1>
-                            <img src="static\src\img\Ellipse 14.svg">
+                            <img src="{% static 'profil\img\Ellipse 14.svg' %} ">
                             <h1 id="users_added_years"> </h1>
-                            <img src="static\src\img\Ellipse 14.svg">
+                            <img src="{% static 'profil\img\Ellipse 14.svg' %} ">
                             <h1 class="empty_field_1"> </h1>
                         </div>
                         <h1 class="empty_field_2"> </h1>
@@ -143,7 +132,7 @@
                         <div class="black_letters">Расскажи, где ты учишься</div>
                         <div class="rask_osebe">Часто студенты ищут соседей по схожим интересам</div>
                     </div>
-                    <div><img src="static\src\img\292227702065211.png" alt="happy face" height="90px" width="90px">
+                    <div><img src="{% static 'profil\img\292227702065211.png' %}" alt="happy face" height="90px" width="90px">
                     </div>
                 </section>
             </div>
