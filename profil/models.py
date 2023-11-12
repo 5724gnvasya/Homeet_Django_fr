@@ -7,7 +7,7 @@ from django.template.defaultfilters import slugify
 
 class Person(models.Model):
         # users_photo = models.ImageField(upload_to=None, height_field=None, width_field=None, max_length=100)
-        name = models.CharField(max_length=50)
+        name = models.CharField(max_length=50, default='')
         # gender = models.CharField(max_length=30)
         # date_of_birth = models.DateField(max_length=30)
         # telegram = models.CharField(max_length=30)

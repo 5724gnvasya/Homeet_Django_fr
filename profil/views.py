@@ -23,6 +23,7 @@ def profil(request):
 def contactUs(request):
     if request.method == "POST":
         name = request.POST['name']
+        print("AAAAA!")
         # gender = request.POST['gender'] #here are names in ['...']
         # date_of_birth = request.POST['date_of_birth']
         # tg = request.POST['tg']
