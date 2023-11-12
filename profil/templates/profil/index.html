@@ -44,7 +44,8 @@
                         <span id="custom-text" class="osebe">Загрузите фотографию весом не более 10 мб</span>
                 </div>
                 <div class="wrapper">
-                    <form class="form">
+                    <form class="form" method = "post">
+                        {% csrf_token %}
                         <div class="form__group">
                             <label class="form__label" placeholder="Имя и фамилия">Имя и
                                 фамилия
@@ -96,7 +97,7 @@
                             </p>
                         </div>
 
-                        <a href="{% url 'about_me' %}" ><button onclick="myFunction(); submitBday();" class="form__button" type="button">Продолжить
+                        <a href="{% url 'about_me' %}" ><button onclick="myFunction(); submitBday(); contactUs();" class="form__button" type="button" id = "btn">Продолжить
                         </button> </a>
 
                     </form>

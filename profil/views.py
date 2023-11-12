@@ -1,6 +1,6 @@
 from django.http import Http404, HttpResponse
 from django.shortcuts import render, redirect
-#from djangouploads.models import Person
+from .models import Person
 
 # Create your views here.
 # def home(request):
@@ -19,3 +19,22 @@ def index(request):
 def profil(request):
     context = {'title': 'Homeet - Profile'}
     return render(request, 'profil/profil.html', context)
+
+def contactUs(request):
+    if request.method == "POST":
+        name = request.POST['name']
+        # gender = request.POST['gender'] #here are names in ['...']
+        # date_of_birth = request.POST['date_of_birth']
+        # tg = request.POST['tg']
+        # nom_tel = request.POST['nom_tel']
+        # osebe = request.POST['osebe']
+
+        if len(name) < 2:
+            return redirect('home')
+        else:
+            save_data = Person(name=name)
+            save_data.save()
+
+            return redirect('profil')
+    return render(request, "profil/index.html")
+

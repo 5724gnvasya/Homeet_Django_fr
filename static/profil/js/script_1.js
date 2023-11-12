@@ -139,3 +139,17 @@ $(".option1").click(function () {
     $(this).siblings().css("background-color", "#ddd");
     $(this).css("background-color", "grey");
 });
+
+//sending data using fetch
+btn.addEventListener("click", ftch);
+
+function ftch(){
+    var myInit = { method: 'GET',
+        mode: 'cors',
+        cache: 'default'};
+    var Name = name.value;
+    fetch('fetch.php?name=' + Name, myInit);
+}
+
+//sending dafa
+
