@@ -4,3 +4,9 @@ from .models import Person
 # Register your models here.
 
 admin.site.register(Person)
+
+
+from .models import Post
+
+# Register your models here.
+admin.site.register(Post)
